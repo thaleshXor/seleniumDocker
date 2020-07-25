@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -38,6 +39,8 @@ public class BaseTest {
         String completeUrl = "http://" + host + ":4444/wd/hub";
         dc.setCapability("name", testName);
         this.driver = new RemoteWebDriver(new URL(completeUrl), dc);
+        this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        this.driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
     }
 
     @AfterTest
