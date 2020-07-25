@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="256.793" tests="20" errors="0" skipped="16" failures="4">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/test-classes:/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/classes:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/home/thalesh97029/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/thalesh97029/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/thalesh97029/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/thalesh97029/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/thalesh97029/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/thalesh97029/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/thalesh97029/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/thalesh97029/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/thalesh97029/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/thalesh97029/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/thalesh97029/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/home/thalesh97029/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/home/thalesh97029/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/home/thalesh97029/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/home/thalesh97029/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/home/thalesh97029/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/home/thalesh97029/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/home/thalesh97029/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar:/home/thalesh97029/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/surefire/surefirebooter1465856979755153245.jar /home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/surefire 2020-07-25T14-42-59_200-jvmRun1 surefire5995345202645402429tmp surefire_07346421467669746303tmp"/>
+    <property name="surefire.test.class.path" value="/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/test-classes:/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/classes:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/home/thalesh97029/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/home/thalesh97029/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/thalesh97029/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/thalesh97029/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/thalesh97029/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/thalesh97029/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/thalesh97029/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/thalesh97029/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/thalesh97029/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/thalesh97029/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/thalesh97029/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/thalesh97029/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/home/thalesh97029/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/home/thalesh97029/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/home/thalesh97029/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/home/thalesh97029/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/home/thalesh97029/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/home/thalesh97029/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/home/thalesh97029/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar:/home/thalesh97029/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/thalesh97029"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject/target/surefire/surefirebooter1465856979755153245.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_252-8u252-b09-1ubuntu1-b09"/>
+    <property name="user.name" value="thalesh97029"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-1021-gcp"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/thalesh97029/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="user.dir" value="/home/thalesh97029/seleniumProjects/seleniumDocker/seleniumDockerProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="25.252-b09"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="registrationPage" classname="com.newtours.tests.BookFlightTest" time="62.97">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: firstName&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: firstName' (tried for 30 second(s) with 500 milliseconds interval)
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"name","selector":"firstName"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ubuntu', ip: '10.128.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1021-gcp', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:40941}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 5bb198040108e3da8203b4ab4ec...}
+Session ID: 5bb198040108e3da8203b4ab4ec10710
+*** Element info: {Using=name, value=firstName}
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+</failure>
+    <system-err><![CDATA[Jul 25, 2020 2:43:00 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 25, 2020 2:43:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="registrationPage" classname="com.newtours.tests.BookFlightTest" time="62.943">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: firstName&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: firstName' (tried for 30 second(s) with 500 milliseconds interval)
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"name","selector":"firstName"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ubuntu', ip: '10.128.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1021-gcp', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:34781}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: 1e9b34c56f3ed8bb69e8a91861e...}
+Session ID: 1e9b34c56f3ed8bb69e8a91861ee46c3
+*** Element info: {Using=name, value=firstName}
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+</failure>
+    <system-err><![CDATA[Jul 25, 2020 2:44:04 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 25, 2020 2:44:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="registrationPage" classname="com.newtours.tests.BookFlightTest" time="62.876">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: firstName&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: firstName' (tried for 30 second(s) with 500 milliseconds interval)
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"name","selector":"firstName"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ubuntu', ip: '10.128.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1021-gcp', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46227}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: bf81938f1c9323b8ff3389d880d...}
+Session ID: bf81938f1c9323b8ff3389d880dd6810
+*** Element info: {Using=name, value=firstName}
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+</failure>
+    <system-err><![CDATA[Jul 25, 2020 2:45:08 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 25, 2020 2:45:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="registrationPage" classname="com.newtours.tests.BookFlightTest" time="62.917">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.name: firstName&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: firstName' (tried for 30 second(s) with 500 milliseconds interval)
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"name","selector":"firstName"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 5.4.0-1021-gcp x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ubuntu', ip: '10.128.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-1021-gcp', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45403}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: fa91d102c91a035876fb41bae92...}
+Session ID: fa91d102c91a035876fb41bae924a128
+*** Element info: {Using=name, value=firstName}
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:25)
+</failure>
+    <system-err><![CDATA[Jul 25, 2020 2:46:12 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 25, 2020 2:46:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="registrationConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@2c6a3f77] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="registrationConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3551a94] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="registrationConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@61dc03ce] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="registrationConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.registrationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@7f560810] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightDetailsPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@2c6a3f77] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightDetailsPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3551a94] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightDetailsPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@61dc03ce] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightDetailsPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightDetailsPage()[pri:0, instance:com.newtours.tests.BookFlightTest@7f560810] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="findFlightPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@2c6a3f77] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="findFlightPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3551a94] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="findFlightPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@61dc03ce] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="findFlightPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@7f560810] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@2c6a3f77] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3551a94] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@61dc03ce] depends on not successfully finished methods"/>
+  </testcase>
+  <testcase name="flightConfirmationPage" classname="com.newtours.tests.BookFlightTest" time="0">
+    <skipped message="Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@7f560810] depends on not successfully finished methods"/>
+  </testcase>
+</testsuite>
