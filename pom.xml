@@ -74,7 +74,7 @@
 			<configuration>
                 <!-- TestNG Suite XML files list for test execution -->
                 <suiteXmlFiles>
-                    <suiteXmlFile>tempTest.xml</suiteXmlFile>
+                    <suiteXmlFile>book-flight-module.xml</suiteXmlFile>
                 </suiteXmlFiles>
              </configuration>
 		</plugin>           
