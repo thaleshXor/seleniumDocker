@@ -66,6 +66,20 @@
                     </execution>
                 </executions>
             </plugin>
+            
+ 		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.21.0</version>
+			<configuration>
+                <!-- TestNG Suite XML files list for test execution -->
+                <suiteXmlFiles>
+                    <suiteXmlFile>tempTest.xml</suiteXmlFile>
+                </suiteXmlFiles>
+             </configuration>
+		</plugin>           
+            
+            
         </plugins>
     </build>
 
