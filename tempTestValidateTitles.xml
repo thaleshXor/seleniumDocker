@@ -17,9 +17,9 @@
         
         <parameter name="url1" value="title:=ndtv;url:=https://www.ndtv.com/"/>
         <parameter name="url2" value="title:=New York Times;url:=https://www.nytimes.com/"/>
-        <parameter name="url3" value="title:=Washington Post;url:=https://www.washingtonpost.com/"/>
-        <parameter name="url4" value="title:=Al Jazeera;url:=https://www.aljazeera.com/"/>
-        <parameter name="url5" value="title:=The Hindu;url:=https://www.thehindu.com/"/>
+        <parameter name="url3" value="title:=dawn.com;url:=https://www.dawn.com/"/>
+        <parameter name="url4" value="title:=bbc;url:=https://www.bbc.com/"/>
+        <parameter name="url5" value="title:=telegraph;url:=https://www.telegraph.co.uk/"/>
         <classes>
             <class name="com.temp_test.tests.TempTest_ValidateTitles" />
 

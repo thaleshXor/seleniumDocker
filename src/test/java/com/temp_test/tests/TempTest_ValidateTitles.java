@@ -47,6 +47,9 @@ public class TempTest_ValidateTitles extends TempBase{
 	   String url=arr[1].replace("url:=", "");
 	   driver.get(url);
 	   String actualTitle=driver.getTitle().toUpperCase();
+ 	   System.out.println("Expected Title : " + expectedTitle);
+ 	   System.out.println("Actual Title : " + actualTitle);
+ 	   System.out.println("URL : " + url);
 	   Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
 
@@ -60,6 +63,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   String url=arr[1].replace("url:=", "");
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
+ 	   System.out.println("Expected Title : " + expectedTitle);
+ 	   System.out.println("Actual Title : " + actualTitle);
+ 	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
  	   
  	  }
@@ -74,6 +80,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   String url=arr[1].replace("url:=", "");
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
+ 	   System.out.println("Expected Title : " + expectedTitle);
+ 	   System.out.println("Actual Title : " + actualTitle);
+ 	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
     	
     }
@@ -88,6 +97,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   String url=arr[1].replace("url:=", "");
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
+ 	   System.out.println("Expected Title : " + expectedTitle);
+ 	   System.out.println("Actual Title : " + actualTitle);
+ 	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
  	   
     }
@@ -102,6 +114,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   String url=arr[1].replace("url:=", "");
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
+ 	   System.out.println("Expected Title : " + expectedTitle);
+ 	   System.out.println("Actual Title : " + actualTitle);
+ 	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
  	   
     }
