@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="temp-module">
-    <test name="temp-test-java">
-        
-        <classes>
-            <class name="com.temp_test.tests.TempTest" />
-        </classes>
-    </test>
-</suite>

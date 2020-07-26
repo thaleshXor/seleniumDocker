@@ -1,4 +1,3 @@
-com/searchmodule/tests/SearchTest.class
-com/tests/BaseTest.class
-com/newtours/tests/BookFlightTest.class
-com/temp_test/tests/TempTest.class
+com\searchmodule\tests\SearchTest.class
+com\newtours\tests\BookFlightTest.class
+com\tests\BaseTest.class
