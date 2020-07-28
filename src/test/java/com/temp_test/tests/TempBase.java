@@ -1,5 +1,6 @@
 package com.temp_test.tests;
 
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -22,12 +23,13 @@ public class TempBase {
     String completeUrl = "http://localhost:4444/wd/hub";
     
 	@BeforeMethod
-	public void initialSetUp(ITestContext context) throws MalformedURLException {
+	public void initialSetUp(Method method,ITestContext context) throws MalformedURLException {
 		System.out.println("performing initial setup of WebDriver");
         DesiredCapabilities dc=new DesiredCapabilities();
         dc.setBrowserName("chrome");
-	String testName=context.getCurrentXmlTest().getName();
-        dc.setCapability("name",testName);
+        String testName=context.getCurrentXmlTest().getName();
+        String methodTestName=method.getName();
+        dc.setCapability("name",testName + ": " + methodTestName);
         ChromeOptions options=new ChromeOptions();
         options.merge(dc);
         driver=new RemoteWebDriver(new URL(completeUrl), options);
