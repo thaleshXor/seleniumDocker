@@ -21,10 +21,12 @@ public class TempBase {
     String completeUrl = "http://localhost:4444/wd/hub";
     
 	@BeforeMethod
-	public void initialSetUp() throws MalformedURLException {
+	public void initialSetUp(ITestContext context) throws MalformedURLException {
 		System.out.println("performing initial setup of WebDriver");
         DesiredCapabilities dc=new DesiredCapabilities();
         dc.setBrowserName("chrome");
+	String testName=context.getCurrentXmlTest().getName();
+        dc.setCapability("name",testName);
         ChromeOptions options=new ChromeOptions();
         options.merge(dc);
         driver=new RemoteWebDriver(new URL(completeUrl), options);
