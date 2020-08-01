@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class TempTest_ValidateTitles extends TempBase{
+public class MyTest extends Base{
 	
 	private String url1;
 	private String url2;
@@ -51,6 +51,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   System.out.println("Actual Title : " + actualTitle);
  	   System.out.println("URL : " + url);
 	   Assert.assertTrue(actualTitle.contains(expectedTitle));
+	   System.out.println("Expected Title : " + expectedTitle);
+	   System.out.println("Actual Title : " + actualTitle);
+	   System.out.println("--------------------------------------");
     }
 
     @Test
@@ -67,6 +70,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   System.out.println("Actual Title : " + actualTitle);
  	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
+	   System.out.println("Expected Title : " + expectedTitle);
+	   System.out.println("Actual Title : " + actualTitle);
+	   System.out.println("--------------------------------------");
  	   
  	  }
 
@@ -84,6 +90,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   System.out.println("Actual Title : " + actualTitle);
  	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
+	   System.out.println("Expected Title : " + expectedTitle);
+	   System.out.println("Actual Title : " + actualTitle);
+	   System.out.println("--------------------------------------");
     	
     }
 
@@ -101,6 +110,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   System.out.println("Actual Title : " + actualTitle);
  	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
+	   System.out.println("Expected Title : " + expectedTitle);
+	   System.out.println("Actual Title : " + actualTitle);
+	   System.out.println("--------------------------------------");
  	   
     }
 
@@ -118,6 +130,9 @@ public class TempTest_ValidateTitles extends TempBase{
  	   System.out.println("Actual Title : " + actualTitle);
  	   System.out.println("URL : " + url);
  	   Assert.assertTrue(actualTitle.contains(expectedTitle));
+	   System.out.println("Expected Title : " + expectedTitle);
+	   System.out.println("Actual Title : " + actualTitle);
+	   System.out.println("--------------------------------------");
  	   
     }
 

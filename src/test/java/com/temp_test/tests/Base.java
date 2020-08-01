@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TempBase {
+public class Base {
 	
     protected WebDriver driver;
     String completeUrl = "http://localhost:4444/wd/hub";
