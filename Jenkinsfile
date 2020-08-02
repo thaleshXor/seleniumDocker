@@ -9,7 +9,7 @@ pipeline {
 
             steps {
 				git(url:'https://github.com/thaleshXor/seleniumDocker',branch:'dev')
-				bat 'mvn clean install -U'
+				
             }
         }//End-stage build
 		
@@ -22,7 +22,7 @@ pipeline {
 						}
 					
 					steps{
-					
+						bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
 						bat 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
@@ -33,7 +33,7 @@ pipeline {
 							TESTNG_FILENAME = 'testng2'
 					}				
 					steps{
-					
+						bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
 						bat 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
