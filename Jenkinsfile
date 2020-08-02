@@ -1,33 +1,40 @@
 pipeline {
-    agent none
+    agent any
+	
+	environment {
+        TESTNG_FILENAME = ''
+    }
     stages {
-        stage('Build Jar') {
-            agent {
-                docker {
-                    image 'maven:3-alpine'
-                    args '-v $HOME/.m2:/root/.m2'
-                }
-            }
+        stage('Build') {
+
             steps {
-                sh 'mvn clean package -DskipTests'
+				git(url:'https://github.com/thaleshXor/seleniumDocker',branch:'dev')
             }
-        }
-        stage('Build Image') {
-            steps {
-                script {
-                	app = docker.build("vinsdocker/selenium-docker")
-                }
-            }
-        }
-        stage('Push Image') {
-            steps {
-                script {
-			        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-			        	app.push("${BUILD_NUMBER}")
-			            app.push("latest")
-			        }
-                }
-            }
-        }
+        }//End-stage build
+		
+		stage('Execution'){
+		
+			parallel{
+				stage('testng1'){
+					
+					TESTNG_FILENAME = 'testng1'
+					sh mvn test -DtestngXmlFileName=${TESTNG_FILENAME}
+
+				}//End-testng1
+				
+				stage('testng2'){
+					
+					TESTNG_FILENAME = 'testng2'
+					sh mvn test -DtestngXmlFileName=${TESTNG_FILENAME}
+
+				}//End-testng1
+				
+				
+			
+			}//End-Parallel
+		
+		}//End-stage('Execution')
+		
+        
     }
 }
