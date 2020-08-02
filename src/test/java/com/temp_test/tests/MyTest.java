@@ -45,6 +45,7 @@ public class MyTest extends Base{
 	   String[] arr=url1.split(";");
 	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
 	   String url=arr[1].replace("url:=", "");
+	   System.out.println("--------------Navigating to URL :" + url);
 	   driver.get(url);
 	   String actualTitle=driver.getTitle().toUpperCase();
  	   System.out.println("Expected Title : " + expectedTitle);
@@ -64,6 +65,7 @@ public class MyTest extends Base{
  	   String[] arr=url2.split(";");
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
+ 	  System.out.println("--------------Navigating to URL :" + url);
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
  	   System.out.println("Expected Title : " + expectedTitle);
@@ -84,6 +86,7 @@ public class MyTest extends Base{
  	   String[] arr=url3.split(";");
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
+ 	  System.out.println("--------------Navigating to URL :" + url);
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
  	   System.out.println("Expected Title : " + expectedTitle);
@@ -104,6 +107,7 @@ public class MyTest extends Base{
  	   String[] arr=url4.split(";");
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
+ 	  System.out.println("--------------Navigating to URL :" + url);
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
  	   System.out.println("Expected Title : " + expectedTitle);
@@ -124,6 +128,7 @@ public class MyTest extends Base{
  	   String[] arr=url5.split(";");
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
+ 	  System.out.println("--------------Navigating to URL :" + url);
  	   driver.get(url);
  	   String actualTitle=driver.getTitle().toUpperCase();
  	   System.out.println("Expected Title : " + expectedTitle);
