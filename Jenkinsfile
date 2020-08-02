@@ -18,7 +18,7 @@ pipeline {
 			parallel{
 				stage('testng1'){
 						environment {
-							TESTNG_FILENAME = 'testng1'
+							TESTNG_FILENAME = 'testng1.xml'
 						}
 					
 					steps{
@@ -30,7 +30,7 @@ pipeline {
 				
 				stage('testng2'){
 					environment {
-							TESTNG_FILENAME = 'testng2'
+							TESTNG_FILENAME = 'testng2.xml'
 					}				
 					steps{
 						bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
