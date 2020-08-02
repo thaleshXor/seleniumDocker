@@ -18,14 +18,14 @@ pipeline {
 				stage('testng1'){
 					
 					TESTNG_FILENAME = 'testng1'
-					sh mvn test -DtestngXmlFileName=${TESTNG_FILENAME}
+					sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 
 				}//End-testng1
 				
 				stage('testng2'){
 					
 					TESTNG_FILENAME = 'testng2'
-					sh mvn test -DtestngXmlFileName=${TESTNG_FILENAME}
+					sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME'
 
 				}//End-testng1
 				
