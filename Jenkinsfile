@@ -16,19 +16,24 @@ pipeline {
 		
 			parallel{
 				stage('testng1'){
+						environment {
+							TESTNG_FILENAME = 'testng1'
+						}
+					
 					steps{
 					
-						TESTNG_FILENAME = 'testng1'
 						sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
 				}//End-testng1
 				
 				stage('testng2'){
+					environment {
+							TESTNG_FILENAME = 'testng2'
+					}				
 					steps{
 					
-						TESTNG_FILENAME = 'testng2'
-						sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME'
+						sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
 				}//End-testng1
