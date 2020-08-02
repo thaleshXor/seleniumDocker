@@ -9,6 +9,7 @@ pipeline {
 
             steps {
 				git(url:'https://github.com/thaleshXor/seleniumDocker',branch:'dev')
+				bat 'mvn clean install -U'
             }
         }//End-stage build
 		
