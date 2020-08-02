@@ -20,22 +20,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 	
     protected WebDriver driver;
-    String completeUrl = "http://localhost:4444/wd/hub";
-    
+	
+	//----------------------------------------GUI---------------------------------------------------
 	@BeforeMethod
-	public void initialSetUp(Method method,ITestContext context) throws MalformedURLException {
+	public void initialSetUp2()  {
 		System.out.println("performing initial setup of WebDriver");
-        DesiredCapabilities dc=new DesiredCapabilities();
-        dc.setBrowserName("chrome");
-        String testName=context.getCurrentXmlTest().getName();
-        String methodTestName=method.getName();
-        dc.setCapability("name",testName + ": " + methodTestName);
-        ChromeOptions options=new ChromeOptions();
-        options.merge(dc);
-        driver=new RemoteWebDriver(new URL(completeUrl), options);
+		WebDriverManager.chromedriver().setup();
+		this.driver=new ChromeDriver();
         //this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         this.driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-	}
+	}	
+	
 	
 	
 	@AfterMethod
