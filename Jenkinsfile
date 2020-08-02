@@ -22,7 +22,7 @@ pipeline {
 					
 					steps{
 					
-						sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
+						bat 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
 				}//End-testng1
@@ -33,7 +33,7 @@ pipeline {
 					}				
 					steps{
 					
-						sh 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
+						bat 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
 				}//End-testng1
