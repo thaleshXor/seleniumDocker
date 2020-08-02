@@ -42,7 +42,7 @@ pipeline {
 			
 			}//End-Parallel
 		
-		}//End-stage('Execution')
+		} //End-stage('Execution')
 		
         
     }
