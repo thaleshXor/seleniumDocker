@@ -22,7 +22,7 @@ pipeline {
 						}
 					
 					steps{
-						bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
+						//bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
 						bat 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
@@ -33,7 +33,7 @@ pipeline {
 							TESTNG_FILENAME = 'testng2.xml'
 					}				
 					steps{
-						bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
+						//bat 'mvn clean install -U -DtestngXmlFileName=${TESTNG_FILENAME}'
 						bat 'mvn test -DtestngXmlFileName=${TESTNG_FILENAME}'
 					}//End-Steps
 
