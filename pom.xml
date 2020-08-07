@@ -86,9 +86,10 @@
 			<artifactId>maven-surefire-plugin</artifactId>
 			<version>2.21.0</version>
 			<configuration>
+
                 <!-- TestNG Suite XML files list for test execution -->
                 <suiteXmlFiles>
-                    <suiteXmlFile>${testngXmlFileName}</suiteXmlFile>
+                    <suiteXmlFile>${varTestng}</suiteXmlFile>
                 </suiteXmlFiles>
              </configuration>
 		</plugin>           

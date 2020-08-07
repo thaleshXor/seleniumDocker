@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -19,7 +20,7 @@ public class MyTest extends Base{
 	//private ExtentTest test;
 	//private ExtentReports report;
 	
-
+	SoftAssert softAssert=new SoftAssert();
 	
 	
 	@BeforeMethod
@@ -40,21 +41,29 @@ public class MyTest extends Base{
  
    @Test
     public void navigateToUrl1() {
+
 	   
 	   System.out.println("Executing : navigateToUrl1()");
 	   String[] arr=url1.split(";");
 	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
 	   String url=arr[1].replace("url:=", "");
 	   System.out.println("--------------Navigating to URL :" + url);
-	   driver.get(url);
-	   String actualTitle=driver.getTitle().toUpperCase();
- 	   System.out.println("Expected Title : " + expectedTitle);
- 	   System.out.println("Actual Title : " + actualTitle);
- 	   System.out.println("URL : " + url);
-	   Assert.assertTrue(actualTitle.contains(expectedTitle));
-	   System.out.println("Expected Title : " + expectedTitle);
-	   System.out.println("Actual Title : " + actualTitle);
-	   System.out.println("--------------------------------------");
+		   
+	   try {
+		   driver.get(url);
+		   String actualTitle=driver.getTitle().toUpperCase();
+	 	   System.out.println("Expected Title : " + expectedTitle);
+	 	   System.out.println("Actual Title : " + actualTitle);
+	 	   System.out.println("URL : " + url);
+		   softAssert.assertTrue(actualTitle.contains(expectedTitle));
+		   System.out.println("Expected Title : " + expectedTitle);
+		   System.out.println("Actual Title : " + actualTitle);
+		   System.out.println("--------------------------------------");
+	   }
+	   catch(Exception e){
+		   
+		   System.out.println("XXXXXXXXXXXXXX Error while Navigating to URL :\n" + url);
+	   }
     }
 
     @Test
@@ -66,16 +75,21 @@ public class MyTest extends Base{
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
  	  System.out.println("--------------Navigating to URL :" + url);
- 	   driver.get(url);
- 	   String actualTitle=driver.getTitle().toUpperCase();
- 	   System.out.println("Expected Title : " + expectedTitle);
- 	   System.out.println("Actual Title : " + actualTitle);
- 	   System.out.println("URL : " + url);
- 	   Assert.assertTrue(actualTitle.contains(expectedTitle));
-	   System.out.println("Expected Title : " + expectedTitle);
-	   System.out.println("Actual Title : " + actualTitle);
-	   System.out.println("--------------------------------------");
- 	   
+	   try {
+	 	   driver.get(url);
+	 	   String actualTitle=driver.getTitle().toUpperCase();
+	 	   System.out.println("Expected Title : " + expectedTitle);
+	 	   System.out.println("Actual Title : " + actualTitle);
+	 	   System.out.println("URL : " + url);
+	 	   softAssert.assertTrue(actualTitle.contains(expectedTitle));
+		   System.out.println("Expected Title : " + expectedTitle);
+		   System.out.println("Actual Title : " + actualTitle);
+		   System.out.println("--------------------------------------");
+	   }
+	   catch(Exception e){
+		   
+		   System.out.println("XXXXXXXXXXXXXX Error while Navigating to URL :\n" + url);
+	   } 	   
  	  }
 
     @Test
@@ -87,16 +101,22 @@ public class MyTest extends Base{
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
  	  System.out.println("--------------Navigating to URL :" + url);
- 	   driver.get(url);
- 	   String actualTitle=driver.getTitle().toUpperCase();
- 	   System.out.println("Expected Title : " + expectedTitle);
- 	   System.out.println("Actual Title : " + actualTitle);
- 	   System.out.println("URL : " + url);
- 	   Assert.assertTrue(actualTitle.contains(expectedTitle));
-	   System.out.println("Expected Title : " + expectedTitle);
-	   System.out.println("Actual Title : " + actualTitle);
-	   System.out.println("--------------------------------------");
-    	
+	   try {
+	 	   driver.get(url);
+	 	   String actualTitle=driver.getTitle().toUpperCase();
+	 	   System.out.println("Expected Title : " + expectedTitle);
+	 	   System.out.println("Actual Title : " + actualTitle);
+	 	   System.out.println("URL : " + url);
+	 	   softAssert.assertTrue(actualTitle.contains(expectedTitle));
+		   System.out.println("Expected Title : " + expectedTitle);
+		   System.out.println("Actual Title : " + actualTitle);
+		   System.out.println("--------------------------------------");
+ 
+	   }
+	   catch(Exception e){
+		   
+		   System.out.println("XXXXXXXXXXXXXX Error while Navigating to URL :\n" + url);
+	   }
     }
 
     @Test
@@ -108,16 +128,22 @@ public class MyTest extends Base{
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
  	  System.out.println("--------------Navigating to URL :" + url);
- 	   driver.get(url);
- 	   String actualTitle=driver.getTitle().toUpperCase();
- 	   System.out.println("Expected Title : " + expectedTitle);
- 	   System.out.println("Actual Title : " + actualTitle);
- 	   System.out.println("URL : " + url);
- 	   Assert.assertTrue(actualTitle.contains(expectedTitle));
-	   System.out.println("Expected Title : " + expectedTitle);
-	   System.out.println("Actual Title : " + actualTitle);
-	   System.out.println("--------------------------------------");
- 	   
+	   try {
+	 	   driver.get(url);
+	 	   String actualTitle=driver.getTitle().toUpperCase();
+	 	   System.out.println("Expected Title : " + expectedTitle);
+	 	   System.out.println("Actual Title : " + actualTitle);
+	 	   System.out.println("URL : " + url);
+	 	   softAssert.assertTrue(actualTitle.contains(expectedTitle));
+		   System.out.println("Expected Title : " + expectedTitle);
+		   System.out.println("Actual Title : " + actualTitle);
+		   System.out.println("--------------------------------------");
+
+	   }
+	   catch(Exception e){
+		   
+		   System.out.println("XXXXXXXXXXXXXX Error while Navigating to URL :\n" + url);
+	   }
     }
 
     @Test
@@ -129,16 +155,22 @@ public class MyTest extends Base{
  	   String expectedTitle=arr[0].replace("title:=", "").toUpperCase();
  	   String url=arr[1].replace("url:=", "");
  	  System.out.println("--------------Navigating to URL :" + url);
- 	   driver.get(url);
- 	   String actualTitle=driver.getTitle().toUpperCase();
- 	   System.out.println("Expected Title : " + expectedTitle);
- 	   System.out.println("Actual Title : " + actualTitle);
- 	   System.out.println("URL : " + url);
- 	   Assert.assertTrue(actualTitle.contains(expectedTitle));
-	   System.out.println("Expected Title : " + expectedTitle);
-	   System.out.println("Actual Title : " + actualTitle);
-	   System.out.println("--------------------------------------");
- 	   
+	   try {
+	 	   driver.get(url);
+	 	   String actualTitle=driver.getTitle().toUpperCase();
+	 	   System.out.println("Expected Title : " + expectedTitle);
+	 	   System.out.println("Actual Title : " + actualTitle);
+	 	   System.out.println("URL : " + url);
+	 	   softAssert.assertTrue(actualTitle.contains(expectedTitle));
+		   System.out.println("Expected Title : " + expectedTitle);
+		   System.out.println("Actual Title : " + actualTitle);
+		   System.out.println("--------------------------------------");
+
+	   }
+	   catch(Exception e){
+		   
+		   System.out.println("XXXXXXXXXXXXXX Error while Navigating to URL :\n" + url);
+	   }
     }
 
 }
